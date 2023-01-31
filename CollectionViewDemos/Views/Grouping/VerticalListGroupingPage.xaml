@@ -5,7 +5,9 @@
              Title="Grouping (with DataTemplates)">
     <StackLayout Margin="20">
         <CollectionView ItemsSource="{Binding Animals}"
-                        IsGrouped="true">
+                        IsGrouped="true"
+                        CanReorderItems="True"
+                        CanMixGroups="True">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid Padding="10">
